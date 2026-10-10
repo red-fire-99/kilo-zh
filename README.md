@@ -30,7 +30,7 @@ kilo-zh/
 1. 复制 `AGENTS.md` 到 Kilo 全局配置目录：
 
    ```text
-   C:\Users\cuiyuxin\.config\kilo\AGENTS.md
+   %USERPROFILE%\.config\kilo\AGENTS.md
    ```
 
    （macOS / Linux 对应 `~/.config/kilo/AGENTS.md`）
@@ -38,7 +38,7 @@ kilo-zh/
 2. 复制 `kilo.jsonc` 到：
 
    ```text
-   C:\Users\cuiyuxin\.config\kilo\kilo.jsonc
+   %USERPROFILE%\.config\kilo\kilo.jsonc
    ```
 
    注意：如果你本地已有 `kilo.jsonc`，请合并而不是直接覆盖，避免丢失原有配置。
@@ -50,16 +50,16 @@ kilo-zh/
 - 可执行文件位置（Windows，Kilo Desktop 0.1.11）：
 
   ```text
-  C:\Users\cuiyuxin\AppData\Local\KiloDesktop\app-0.1.11\resources\kilo\windows-x64-baseline\bin\kilo.exe
+  %LOCALAPPDATA%\KiloDesktop\app-0.1.11\resources\kilo\windows-x64-baseline\bin\kilo.exe
   ```
 
-  注意：`C:\Users\cuiyuxin\.config\kilo\kilo.exe` 并不存在。
+  注意：`%USERPROFILE%\.config\kilo\kilo.exe` 并不存在。
 
 - `ui-strings.zh-CN.json` 收录了设置分区名称（通用、外观、模型、权限、MCP 等）与内置工具名（应用补丁、搜索内容、读取文件等）的中文译名。
 - 由于应用未内置 i18n 机制，将译文真正注入界面需要修改并重新打包应用，本仓库不包含该操作；如在 GitHub issue 中提出多语言支持请求，可加速官方中文化。
 
 ## 隐私说明
 
-- 本仓库不包含任何本地绝对路径（文档中出现的路径均为官方文档式示例）。
+- 本仓库不包含任何本地绝对路径（文档中的路径均使用环境变量占位符）。
 - 不包含账号名、密码、密钥、Token。
 - 不包含真实 API Key、数据库连接串、个人数据。
