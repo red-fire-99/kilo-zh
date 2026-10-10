@@ -1,0 +1,15 @@
+{
+  "$schema": "https://app.kilo.ai/config.json",
+  "instructions": ["AGENTS.md"],
+  "permission": {
+    "bash": {
+      "python --version *": "allow",
+      "python *": "allow",
+      "Get-ChildItem *": "allow",
+      "Select-Object *": "allow"
+    },
+    "external_directory": {
+      "C:/Users/*/AppData/Roaming/Kilo Desktop/*": "allow"
+    }
+  }
+}
