@@ -1,15 +1,26 @@
+// Kilo AI 客户端配置文件（汉化注释版）
+// 说明：键名（key）与 JSON 结构完全保持英文原样，只添加中文注释，不影响程序解析。
+// 所有注释均以 // 开头，符合 jsonc（带注释的 JSON）规范。
 {
+  // 配置文件 JSON Schema 地址，用于编辑器校验与自动补全
   "$schema": "https://app.kilo.ai/config.json",
+
+  // 额外指令文件列表：这些文件的内容会作为系统指令注入到每次会话中
+  // 这里引用同目录下的 AGENTS.md（中文全局指令，要求始终使用简体中文回复）
   "instructions": ["AGENTS.md"],
+
+  // 权限控制：按工具与命令模式配置 allow（允许）/ ask（询问）/ deny（拒绝）
   "permission": {
+    // bash 工具的权限规则：对象形式按命令模式匹配，从上到下第一个命中生效
     "bash": {
+      // 允许执行 python --version * 形式的命令（* 为通配符）
       "python --version *": "allow",
+      // 允许执行任意 python 命令
       "python *": "allow",
+      // 允许执行 PowerShell 的 Get-ChildItem（列出目录内容）
       "Get-ChildItem *": "allow",
+      // 允许执行 Select-Object（筛选/选择对象属性）
       "Select-Object *": "allow"
-    },
-    "external_directory": {
-      "C:/Users/*/AppData/Roaming/Kilo Desktop/*": "allow"
     }
   }
 }

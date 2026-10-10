@@ -1,0 +1,60 @@
+{
+  "说明": "本文件为 Kilo AI 客户端界面字符串的中文译名表（部分提取）。Kilo Desktop / Kilo CLI 目前没有内置界面语言切换功能，应用界面只有英文；本文件提供人工翻译后的中文对照，供参考或二次开发使用。键名保持英文原样。",
+  "来源": [
+    "Kilo Desktop 安装目录: resources/kilo/windows-x64-baseline/bin/kilo.exe (Kilo CLI/TUI 主程序)",
+    "TUI 资源包: bin/console/assets/index-*.js"
+  ],
+  "settings_sections": {
+    "General": "通用",
+    "Appearance": "外观",
+    "Account": "账户",
+    "Profile": "个人资料",
+    "Models": "模型",
+    "Providers": "服务提供商",
+    "Agents": "智能体",
+    "New Agent": "新建智能体",
+    "Edit Agent": "编辑智能体",
+    "Tools": "工具",
+    "Permissions": "权限",
+    "MCP": "MCP（模型上下文协议）",
+    "Servers": "服务器",
+    "LSP Servers": "LSP 服务器",
+    "Formatters": "格式化工具",
+    "Code Indexing": "代码索引",
+    "Keybinds": "快捷键",
+    "Notifications": "通知",
+    "Behaviour": "行为",
+    "Advanced": "高级",
+    "Defaults": "默认值",
+    "Overview": "概览",
+    "Explore": "探索",
+    "Sources": "来源",
+    "Projects": "项目",
+    "Filter projects": "筛选项目",
+    "Console": "控制台",
+    "CLI": "命令行",
+    "UI": "界面"
+  },
+  "tools": {
+    "apply_patch": "应用补丁",
+    "bash": "执行命令（Bash）",
+    "edit": "编辑文件",
+    "glob": "查找文件",
+    "grep": "搜索内容",
+    "lsp": "语言服务器（LSP）",
+    "question": "询问用户",
+    "read": "读取文件",
+    "recall": "本地回忆",
+    "skill": "加载技能",
+    "task": "子智能体任务",
+    "todowrite": "待办列表",
+    "webfetch": "抓取网页",
+    "websearch": "网络搜索",
+    "write": "写入文件"
+  },
+  "notes": [
+    "以上为从可执行文件与前端资源包中提取出的可见字符串的一部分，并非完整清单。",
+    "由于应用界面未内置多语言（i18n）机制，将这些译文注入界面需要修改并重新打包应用，本仓库不包含该操作。",
+    "要让 AI 输出中文，请使用本仓库的 AGENTS.md 全局指令。"
+  ]
+}
